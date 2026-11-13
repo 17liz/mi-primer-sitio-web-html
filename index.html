@@ -1,0 +1,470 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: DELGADO ROMERO FATIMA LIZBETH
+  * Grupo: 5A PRO VESP
+  * Actividad: Portal Clínica Veterinaria 
+  ====================================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Vet — Cuidamos a tu mejor amigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== BARRA SUPERIOR ========== -->
+    <div class="top-bar" id="inicio">
+        <div class="top-bar-inner">
+            <span><a href="tel:+527341234567" style="color:inherit;">📞 666-666-666</a></span>
+            <a class="top-wa" href="https://wa.me/527341234567" target="_blank" rel="noopener noreferrer">💬 Urgencias 24h por <strong>WhatsApp</strong></a>
+        </div>
+    </div>
+
+    <!-- ========== HEADER / NAV (Flexbox) ========== -->
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="#inicio" class="logo">
+                <span class="logo-mark">🐾</span>
+                <span class="logo-text">Huellitas <em>Vet</em></span>
+            </a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#como">Cómo funciona</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#cita">Citas</a>
+                <a href="login.html" class="btn-nav">Mis Mascotas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="hero-eyebrow">Clínica veterinaria · Atención 24 horas</p>
+                <h1>Adopta el cuidado.<br><span>No lo dejes para después.</span></h1>
+                <p class="hero-lead">
+                    En <strong>Huellitas Vet</strong> cuidamos la salud de perros, gatos y animales de compañía
+                    con médicos certificados, instalaciones modernas y trato humano.
+                </p>
+                <div class="hero-actions">
+                    <a href="#cita" class="btn btn-primary">Agendar cita</a>
+                    <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+                </div>
+                <ul class="hero-badges">
+                    <li>✓ Urgencias 24h</li>
+                    <li>✓ Médicos certificados</li>
+                    <li>✓ Laboratorio propio</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80"
+                     alt="Perro en consulta veterinaria"
+                     class="hero-main-img">
+                <div class="hero-float">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=300&q=80"
+                         alt="Gato en clínica">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CÓMO FUNCIONA ========== -->
+        <section id="como" class="section how">
+            <div class="container">
+                <h2 class="section-title">Cómo funciona</h2>
+                <p class="section-sub">Tres pasos sencillos para cuidar a tu mascota</p>
+                <div class="how-grid">
+                    <article class="how-card">
+                        <span class="how-num">01</span>
+                        <h3>Elige el servicio</h3>
+                        <p>Consulta, vacunas, cirugía o estética. Selecciona lo que necesita tu compañero.</p>
+                    </article>
+                    <article class="how-card">
+                        <span class="how-num">02</span>
+                        <h3>Agenda tu cita</h3>
+                        <p>Completa el formulario con los datos de tu mascota y la fecha que prefieres.</p>
+                    </article>
+                    <article class="how-card">
+                        <span class="how-num">03</span>
+                        <h3>Recibe atención</h3>
+                        <p>Nuestro equipo te confirma el horario y te atiende con profesionalismo y cariño.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICIOS (Grid) ========== -->
+        <section id="servicios" class="section services">
+            <div class="container">
+                <h2 class="section-title">Nuestros servicios</h2>
+                <p class="section-sub">Atención integral para la salud y bienestar de tu mascota</p>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80"
+                                 alt="Consulta general veterinaria">
+                        </div>
+                        <div class="service-body">
+                            <h3>Consulta general</h3>
+                            <p>Revisión completa, diagnóstico y tratamiento para perros, gatos y otras mascotas.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                                 alt="Cirugía veterinaria">
+                        </div>
+                        <div class="service-body">
+                            <h3>Cirugía y hospitalización</h3>
+                            <p>Quirófano equipado y área de recuperación supervisada por especialistas.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=600&q=80"
+                                 alt="Vacunación de mascotas">
+                        </div>
+                        <div class="service-body">
+                            <h3>Vacunación y desparasitación</h3>
+                            <p>Esquemas actualizados y control de parásitos internos y externos.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
+                                 alt="Estética canina">
+                        </div>
+                        <div class="service-body">
+                            <h3>Estética y spa</h3>
+                            <p>Baño, corte, limpieza de oídos y cuidado completo de la imagen de tu mascota.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LO QUE OFRECEMOS + STATS ========== -->
+        <section class="section offer">
+            <div class="container offer-layout">
+                <div class="offer-text">
+                    <p class="eyebrow">Donde el cuidado y el amor se unen</p>
+                    <h2>Comprometidos con el bienestar animal</h2>
+                    <p>
+                        Nuestro equipo se dedica a brindar atención de primer nivel.
+                        Explora el rango de servicios especializados que tenemos para ti.
+                    </p>
+                    <ul class="offer-list">
+                        <li><strong>Adopción responsable</strong> — Orientación y seguimiento</li>
+                        <li><strong>Rescate</strong> — Apoyo a animales en situación de calle</li>
+                        <li><strong>Entrenamiento básico</strong> — Consejos de conducta</li>
+                        <li><strong>Productos</strong> — Alimento y accesorios de calidad</li>
+                    </ul>
+                </div>
+
+                <!-- Aside semántico: información complementaria (horarios y tip) -->
+                <aside class="offer-aside" aria-label="Información útil">
+                    <h3>Horario de atención</h3>
+                    <ul class="aside-list">
+                        <li><strong>Lun – Vie:</strong> 9:00 – 20:00</li>
+                        <li><strong>Sábados:</strong> 9:00 – 18:00</li>
+                        <li><strong>Domingos:</strong> 10:00 – 14:00</li>
+                        <li><strong>Urgencias:</strong> 24 horas</li>
+                    </ul>
+                    <p class="aside-tip"><strong>Tip del día:</strong> Lleva siempre la cartilla de vacunación de tu mascota a la consulta.</p>
+                </aside>
+
+                <div class="offer-visual">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=80"
+                         alt="Perro feliz sonriendo">
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-num">10k+</span>
+                    <span class="stat-label">Consultas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">7k+</span>
+                    <span class="stat-label">Pacientes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">96%</span>
+                    <span class="stat-label">Satisfacción</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-label">Servicios</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EQUIPO (carrusel) ========== -->
+        <section id="equipo" class="section team">
+            <div class="container">
+                <div class="team-head">
+                    <div>
+                        <h2 class="section-title">Nuestro equipo</h2>
+                        <p class="section-sub">Médicos y personal de apoyo certificados</p>
+                    </div>
+                    <div class="team-nav">
+                        <button type="button" id="btn-prev" class="nav-btn" aria-label="Anterior">‹</button>
+                        <button type="button" id="btn-next" class="nav-btn" aria-label="Siguiente">›</button>
+                    </div>
+                </div>
+
+                <div class="team-track" id="teachers-track">
+                    <article class="team-card">
+                        <img src="img/img1.jpg" alt="Dra. Coral Delgado">
+                        <div class="team-info">
+                            <h3>Dra. Coral Delgado</h3>
+                            <p>Directora médica · Cirugía y medicina interna</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dra. Ana López">
+                        <div class="team-info">
+                            <h3>Dra. Ana López</h3>
+                            <p>Medicina felina y dermatología</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" alt="Dr. Carlos Ruiz">
+                        <div class="team-info">
+                            <h3>Dr. Carlos Ruiz</h3>
+                            <p>Traumatología y ortopedia</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80" alt="Dra. Laura Méndez">
+                        <div class="team-info">
+                            <h3>Dra. Laura Méndez</h3>
+                            <p>Odontología veterinaria</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="MVZ Sofía Herrera">
+                        <div class="team-info">
+                            <h3>MVZ Sofía Herrera</h3>
+                            <p>Urgencias y cuidados intensivos</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img src="img/img2.jpg" alt="Dra. Lucía Ramírez">
+                        <div class="team-info">
+                            <h3>Dra. Lucía Ramírez</h3>
+                            <p>Recepción y cuidados especiales</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOPORTE / ACCIONES ========== -->
+        <section class="section support">
+            <div class="container">
+                <h2 class="section-title">También puedes apoyar</h2>
+                <div class="support-grid">
+                    <article class="support-card">
+                        <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=300&q=80" alt="Adopción">
+                        <h3>Adoptar</h3>
+                        <p>Brinda un hogar a un animal rescatado. Te orientamos en todo el proceso.</p>
+                    </article>
+                    <article class="support-card">
+                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=300&q=80" alt="Donar">
+                        <h3>Donar</h3>
+                        <p>Ayuda con alimento, medicamentos o insumos para animales en situación vulnerable.</p>
+                    </article>
+                    <article class="support-card">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=300&q=80" alt="Hogar temporal">
+                        <h3>Hogar temporal</h3>
+                        <p>Sé familia de acogida mientras un animal encuentra su hogar definitivo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FORMULARIO DE CITA ========== -->
+        <section id="cita" class="section cta-form">
+            <div class="container cta-layout">
+                <div class="cta-info">
+                    <p class="eyebrow">Agenda fácil y rápido</p>
+                    <h2>¿Necesitas una cita?</h2>
+                    <p>
+                        Completa el formulario y nos pondremos en contacto para confirmar
+                        el horario de atención de tu mascota en <strong>Huellitas Vet</strong>.
+                    </p>
+                    <ul class="cta-list">
+                        <li>✓ Consulta general o de seguimiento</li>
+                        <li>✓ Vacunación y desparasitación</li>
+                        <li>✓ Cirugía programada</li>
+                        <li>✓ Estética y spa</li>
+                    </ul>
+                    <!-- Video embebido (contenido incrustado) -->
+                    <div class="embed-video">
+                        <iframe
+                            src="https://www.youtube.com/embed/TbgB5zH8_3E?si=1v2ajtzcuN0K0ZUt"
+                            title="Video sobre cuidado de mascotas"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h3>Agendar cita</h3>
+                    <form id="form-hero-informes" action="#" method="POST">
+                        <div class="field">
+                            <label for="info_nombre">Tu nombre completo</label>
+                            <input type="text" id="info_nombre" name="nombre" required maxlength="60" placeholder="Ej. María López">
+                        </div>
+                        <div class="field">
+                            <label for="info_mascota">Nombre de tu mascota</label>
+                            <input type="text" id="info_mascota" name="mascota" required maxlength="40" placeholder="Ej. Max">
+                        </div>
+                        <div class="field">
+                            <label for="info_email">Correo electrónico</label>
+                            <input type="email" id="info_email" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="field">
+                            <label for="info_telefono">Teléfono / WhatsApp</label>
+                            <input type="tel" id="info_telefono" name="telefono" required pattern="[0-9\s\-]{10,15}" placeholder="666-666-666">
+                        </div>
+                        <div class="field">
+                            <label for="info_tipo">Tipo de mascota</label>
+                            <select id="info_tipo" name="tipo" required>
+                                <option value="">Selecciona…</option>
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                                <option value="otro">Otra</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="info_servicio">Servicio</label>
+                            <select id="info_servicio" name="servicio" required>
+                                <option value="">Selecciona…</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="vacuna">Vacunación / Desparasitación</option>
+                                <option value="cirugia">Cirugía</option>
+                                <option value="estetica">Estética / Spa</option>
+                                <option value="urgencia">Urgencia</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="info_fecha">Fecha preferida</label>
+                            <input type="date" id="info_fecha" name="fecha" required>
+                        </div>
+                        <div class="field">
+                            <label for="info_comentarios">Comentarios o síntomas</label>
+                            <textarea id="info_comentarios" name="comentarios" rows="3" maxlength="300" placeholder="Describe brevemente…"></textarea>
+                        </div>
+                        <div class="field field-check">
+                            <input type="checkbox" id="info_terminos" name="terminos" required>
+                            <label for="info_terminos">Acepto el aviso de privacidad y el tratamiento de mis datos.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Solicitar cita</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MARCAS / ALIADOS (marquee) ========== -->
+        <section class="section brands">
+            <div class="container">
+                <h2 class="section-title">Marcas y aliados</h2>
+                <p class="section-sub">Productos y laboratorios de confianza</p>
+            </div>
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>Royal Canin</span>
+                    <span>Hill's Science</span>
+                    <span>Boehringer</span>
+                    <span>Virbac</span>
+                    <span>Zoetis</span>
+                    <span>Purina Pro Plan</span>
+                    <span>IDEXX Labs</span>
+                    <span>Frontline</span>
+                    <span>Royal Canin</span>
+                    <span>Hill's Science</span>
+                    <span>Boehringer</span>
+                    <span>Virbac</span>
+                    <span>Zoetis</span>
+                    <span>Purina Pro Plan</span>
+                    <span>IDEXX Labs</span>
+                    <span>Frontline</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MAPA (incrustado) ========== -->
+        <section class="section map-section">
+            <div class="container">
+                <h2 class="section-title">Encuéntranos</h2>
+                <p class="section-sub">Visítanos o agenda y ven cuando te confirmemos</p>
+                <div class="map-embed">
+                    <p style="text-align:center;color:var(--muted);margin-bottom:0.75rem;font-size:0.95rem;">
+                        Referencia de ubicación (Hospital Veterinario de Especialidades UNAM — Ciudad Universitaria, CDMX)
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps?q=Hospital+Veterinario+de+Especialidades+UNAM,+Ciudad+Universitaria,+Coyoac%C3%A1n,+CDMX&hl=es&z=16&output=embed"
+                        width="100%" height="360" style="border:0; border-radius: 16px;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Hospital Veterinario de Especialidades UNAM"></iframe>
+                    <p style="text-align:center;margin-top:0.75rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hospital+Veterinario+de+Especialidades+UNAM+Ciudad+Universitaria"
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn-ghost" style="margin-top:0.5rem;">
+                            Abrir en Google Maps →
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark">🐾</span>
+                <span class="logo-text">Huellitas <em>Vet</em></span>
+                <p>Cuidamos a tu mejor amigo con profesionalismo y cariño.</p>
+                <p><small>Atención de lunes a domingo · Urgencias 24 horas</small></p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#cita">Citas</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>📍 Plantel zona centro</p>
+                <p><a href="tel:+527341234567" style="color:inherit;">📞 666-666-666</a></p>
+                <p><a href="https://wa.me/527341234567" target="_blank" rel="noopener noreferrer" style="color:inherit;">💬 WhatsApp 24h</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Huellitas Vet © 2026 · Desarrollado por DELGADO ROMERO FATIMA LIZBETH (5A PRO VESP) · CBTis 166</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
